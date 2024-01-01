@@ -47,19 +47,19 @@ DATABASE_NAME = environ.get('DATABASE_NAME', "Rajappan")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 
 #this shortlink working
-IMPORT_JK_SITE = environ.get('IMPORT_JK_SITE', 'ziplinker.net')
-IMPORT_JK_API = environ.get('IMPORT_JK_API', 'c992d5c6d3a74f6ceccbf9bc34aa27c8487c11d2')
-IS_SHORTLINK = is_enabled((environ.get('IS_SHORTLINK', 'True')), False)
+IMPORT_JK_SITE = environ.get('IMPORT_JK_SITE', 'moneykamalo.com')
+IMPORT_JK_API = environ.get('IMPORT_JK_API', '8a04025f212aa7c29f79bb1c2ac28300e149a7e0')
+IS_SHORTLINK = is_enabled((environ.get('IS_SHORTLINK', 'True')), True)
 
 # Others
 IS_VERIFY = is_enabled((environ.get('IS_VERIFY', 'False')), False)
 HOW_TO_VERIFY = environ.get('HOW_TO_VERIFY', "https://t.me/c/1845700490/3")
-VERIFY2_URL = environ.get('VERIFY2_URL', "ziplinker.net")
-VERIFY2_API = environ.get('VERIFY2_API', "e45148e36c775f7602b27f6036bcd96a750db1c8")
+VERIFY2_URL = environ.get('VERIFY2_URL', "moneykamalo.com")
+VERIFY2_API = environ.get('VERIFY2_API', "8a04025f212aa7c29f79bb1c2ac28300e149a7e0")
 
 # 👇==============this doesn't work===============👇
-SHORTLINK_URL = environ.get('SHORTLINK_URL', 'ziplinker.net')
-SHORTLINK_API = environ.get('SHORTLINK_API', 'e45148e36c775f7602b27f6036bcd96a750db1c8')
+SHORTLINK_URL = environ.get('SHORTLINK_URL', 'moneykamalo.com')
+SHORTLINK_API = environ.get('SHORTLINK_API', '8a04025f212aa7c29f79bb1c2ac28300e149a7e0')
 # ☝️==============don't remove this===============☝️
 
 DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch for dch in environ.get('DELETE_CHANNELS', '0').split()]
